@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+
+  <title>I Love U</title>
+
+  <link href="assets/css/default.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="main">
+  <div id="error">宝贝，你使用的浏览器无法支持即将显示的内容，请换成谷歌（<a href="https://www.google.cn/chrome/">Chrome</a>）或者火狐（<a
+          href="http://www.firefox.com.cn/">Firefox</a>）浏览器哟~
+  </div>
+
+  <div id="wrap">
+    <div id="text">
+      <div id="code">
+        <span class="say">一晃三年多快过去了，</span><br>
+        <span class="say">这日子说长不长，可说短也不短，</span><br>
+        <span class="say">我们的时光里，有吵有笑，有哭有闹</span><br>
+        <span class="say">分分合合，</span><br>
+        <span class="say">经历了千辛万苦，通过了千难万阻，</span><br>
+        <span class="say">但最终，我们还是走在了一起。</span><br>
+        <br>
+        <span class="say">在最没有能力的年纪，</span><br>
+        <span class="say">碰见了最想要照顾一生的你。</span><br>
+        <span class="say">说来可笑，却也幸运。</span><br>
+        <span class="say">人的一生能有多少个青春？</span><br>
+        <span class="say">曾经的倔强也开始化为了点滴柔情，</span><br>
+        <span class="say">你若不离，我定不弃，</span><br>
+        <span class="say">陪你去看遍这世界的繁华。</span><br>
+        <br>
+        <span class="say">我期待一生与你一起走过，</span><br>
+        <span class="say">我期待与你慢慢变老，</span><br>
+        <span class="say">陪你闹，看你笑。</span><br>
+        <span class="say">所有我们经历的点点滴滴，</span><br>
+        <span class="say">都是我们一辈子最美的回忆。</span><br>
+        <span class="say">我愿意爱你直到老去！</span><br>
+        <br>
+        <span class="say"><span class="space"></span> -- Yours, Zero</span>
+      </div>
+    </div>
+
+    <div id="clock-box">
+      <a target="_blank" onmouseover="sendEmail()"><strong>Zero</strong></a>与<strong>兰泽</strong>在一起的
+      <div id="clock"></div>
+    </div>
+
+    <canvas id="canvas" width="1100" height="680"></canvas>
+  </div>
+
+  <!--  <audio src="assets/res/love.mp3" autoplay loop>当前浏览器不支持音频标签</audio>-->
+</div>
+
+<script src="assets/js/jquery/jquery-1.7.2.min.js"></script>
+<script src="assets/js/jscex/jscex.min.js"></script>
+<script src="assets/js/jscex/jscex-parser.min.js"></script>
+<script src="assets/js/jscex/jscex-builderbase.min.js"></script>
+<script src="assets/js/jscex/jscex-jit.min.js"></script>
+<script src="assets/js/jscex/jscex-async.min.js"></script>
+<script src="assets/js/jscex/jscex-async-powerpack.min.js"></script>
+
+<script src="assets/js/love.js"></script>
+<script src="assets/js/build.js"></script>
+<script src="assets/js/calculate.js"></script>
+
+<script>
+  function sendEmail() {
+    if (confirm("为什么把鼠标移到这里？" + "\n\n" + "如果你能发消息给我，我会很高兴的！")) {
+      location.href = "mailto:cnzeropro@qq.com?subject=我很高兴你能发消息给我，爱你么么哒！(^з^)-☆";
+    } else {
+      alert("我有一些生气，你现在必须要安慰安慰我！")
+    }
+  }
+</script>
+</body>
+</html>
